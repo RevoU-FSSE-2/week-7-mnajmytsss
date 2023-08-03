@@ -4,37 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div>
-
-    </div>
-    <div class="input-group mb-3">
-      <button
-        class="btn btn-outline-secondary dropdown-toggle"
-        type="button"
-        data-bs-toggle="dropdown"
-        aria-expanded="false"
-      >
-        Dropdown
-      </button>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
-        <li><hr class="dropdown-divider" /></li>
-        <li><a class="dropdown-item" href="#">Separated link</a></li>
-      </ul>
-      <input
-        type="text"
-        class="form-control"
-        aria-label="Text input with dropdown button"
-      />
-    </div>
+    <header class="mt-5 text-center">
+      <div  class="">
+        <h1>Financial Tracker</h1>
+      </div>
+    </header>
+    <section id="forms">
+      <div class="container mt-5">
+        <form class="form-control">
+          <div class="row mt-3 mb-2">
+            <div class="col">
+              <label for="disabledSelect" class="form-label">Type :</label>
+              <select id="disabledSelect" class="form-select">
+                <option>Cash in</option>
+                <option>Cash out</option>
+              </select>
+            </div>
+            <div class="col">
+              <label for="inputName" class="form-label">Name :</label>
+              <input type="text" class="form-control" id="InputName" />
+            </div>
+            <div class="col">
+              <label for="InputDetails" class="form-label">Details :</label>
+              <input type="text" class="form-control" id="InputDetails" />
+            </div>
+            <div class="col">
+              <label for="inputAmount" class="form-label">Amount (RP)</label>
+              <input type="number" class="form-control" id="inputAmount" />
+            </div>
+          </div>
+          <div class="container text-center mb-3">
+            <button type="submit" class="btn btn-primary mt-3 w-25">
+              Submit
+            </button>
+          </div>
+        </form>
+        <div></div>
+      </div>
+    </section>
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
