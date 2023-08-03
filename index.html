@@ -18,7 +18,7 @@
   </head>
   <body>
     <header class="mt-5 text-center">
-      <div  class="">
+      <div class="">
         <h1>Financial Tracker</h1>
       </div>
     </header>
@@ -29,21 +29,31 @@
             <div class="col">
               <label for="cash" class="form-label">Type :</label>
               <select id="cash" class="form-select">
-                <option value="cashIn">Cash in</option>
-                <option value="cashOut">Cash out</option>
+                <option value="Cash in">Cash in</option>
+                <option value="Cash out">Cash out</option>
               </select>
             </div>
             <div class="col">
               <label for="inputName" class="form-label">Name :</label>
-              <input type="text" class="form-control" id="inputName" required/>
+              <input type="text" class="form-control" id="inputName" />
             </div>
             <div class="col">
               <label for="inputDetails" class="form-label">Details :</label>
-              <input type="text" class="form-control" id="inputDetails" required/>
+              <input
+                type="text"
+                class="form-control"
+                id="inputDetails"
+            
+              />
             </div>
             <div class="col">
               <label for="inputAmount" class="form-label">Amount (RP)</label>
-              <input type="number" class="form-control" id="inputAmount" required/>
+              <input
+                type="number"
+                class="form-control"
+                id="inputAmount"
+                required
+              />
             </div>
           </div>
           <div id="btn" class="container text-center mb-3">
@@ -52,7 +62,11 @@
             </button>
           </div>
         </form>
-        <div></div>
+        <div>
+          <ul>
+            <li id="biji"></li>
+          </ul>
+        </div>
       </div>
     </section>
   </body>
