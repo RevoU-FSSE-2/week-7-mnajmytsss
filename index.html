@@ -24,30 +24,30 @@
     </header>
     <section id="forms">
       <div class="container mt-5">
-        <form class="form-control">
-          <div class="row mt-3 mb-2">
+        <form id="form" class="form-control">
+          <div id="content" class="row mt-3 mb-2">
             <div class="col">
-              <label for="disabledSelect" class="form-label">Type :</label>
-              <select id="disabledSelect" class="form-select">
-                <option>Cash in</option>
-                <option>Cash out</option>
+              <label for="cash" class="form-label">Type :</label>
+              <select id="cash" class="form-select">
+                <option value="cashIn">Cash in</option>
+                <option value="cashOut">Cash out</option>
               </select>
             </div>
             <div class="col">
               <label for="inputName" class="form-label">Name :</label>
-              <input type="text" class="form-control" id="InputName" />
+              <input type="text" class="form-control" id="inputName" required/>
             </div>
             <div class="col">
-              <label for="InputDetails" class="form-label">Details :</label>
-              <input type="text" class="form-control" id="InputDetails" />
+              <label for="inputDetails" class="form-label">Details :</label>
+              <input type="text" class="form-control" id="inputDetails" required/>
             </div>
             <div class="col">
               <label for="inputAmount" class="form-label">Amount (RP)</label>
-              <input type="number" class="form-control" id="inputAmount" />
+              <input type="number" class="form-control" id="inputAmount" required/>
             </div>
           </div>
-          <div class="container text-center mb-3">
-            <button type="submit" class="btn btn-primary mt-3 w-25">
+          <div id="btn" class="container text-center mb-3">
+            <button type="submit" class="btn btn-primary mt-3 w-35">
               Submit
             </button>
           </div>
